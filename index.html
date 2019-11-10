@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	
+	<script src="js/pdf.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/pdf.css">	
+</head>
+
+<body >
+	<div class="loader" >
+		<div class="top-bar">
+			Page Number
+			<input type="text" class="text" id="text-box" value="1" >
+			<button class="btn" id="prev-page" >
+				<i class="fas fa-arrow-circle-left"></i> Prev Page
+			</button>
+			<button class="btn" id="next-page" >
+				Next Page <i class="fas fa-arrow-circle-right"></i>
+			</button>
+			<span class="page-info">
+				Page <span id="page-num"></span> of <span id="page-count"></span>
+			</span>
+			
+		</div>
+	</div>
+	<input type="hidden" id="pdf" value="docs/Pyidaungsu_Font_User_Manual_05.pdf">
+	<div id="holder"></div>
+	
+	<script src="js/pdfProcess.js"></script>
+
+</body>
+</html>
